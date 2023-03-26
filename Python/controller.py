@@ -1,10 +1,9 @@
 import function as f
 import ui
 
-
 def run():
     input_from_user = ''
-    while input_from_user != '7':
+    while input_from_user != '4':
         ui.menu()
         input_from_user = input().strip()
         if input_from_user == '1':

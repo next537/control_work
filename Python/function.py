@@ -12,7 +12,7 @@ def add():
             Note.Note.set_id(note)
     array.append(note)
     file_operation.write_file(array, 'a')
-    print('Заметка добавлена...')
+    print('Заметка добавлена')
 
 
 def show(text):
@@ -25,7 +25,7 @@ def show(text):
             logic = False
             print(Note.Note.map_note(notes))
     if logic == True:
-        print('Нет ни одной заметки...')
+        print('Нет ни одной заметки')
 
 
 def id_edit_del_show(text):
@@ -40,10 +40,10 @@ def id_edit_del_show(text):
                 Note.Note.set_title(notes, note.get_title())
                 Note.Note.set_body(notes, note.get_body())
                 Note.Note.set_date(notes)
-                print('Заметка изменена...')
+                print('Заметка изменена')
             if text == 'del':
                 array.remove(notes)
-                print('Заметка удалена...')
+                print('Заметка удалена')
             if text == 'show':
                 print(Note.Note.map_note(notes))
     if logic == True:
