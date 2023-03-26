@@ -1,9 +1,10 @@
 import function as f
 import ui
 
+
 def run():
     input_from_user = ''
-    while input_from_user != '4':
+    while input_from_user != '5':
         ui.menu()
         input_from_user = input().strip()
         if input_from_user == '1':
@@ -16,4 +17,6 @@ def run():
         if input_from_user == '4':
             f.show('all')
             f.id_edit_del_show('edit')
+        if input_from_user == '5':
+            ui.goodbye()
             break
